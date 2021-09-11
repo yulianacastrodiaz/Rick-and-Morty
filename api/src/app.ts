@@ -3,7 +3,7 @@ import morgan from "morgan";
 import cookieParser from "cookie-parser"
 import cors from "cors";
 import config from '../lib/config';
-import {error} from "../interfaces/error"
+import {error} from "../interfaces"
 import routes from './routes/index';
 
 const app: Application = express();
