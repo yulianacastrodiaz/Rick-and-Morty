@@ -1,9 +1,21 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# node-waf configuration
+.lock-wscript
+
+# package-lock.json
+package-lock.json
+
+
 # dependencies
-/node_modules
+node_modules
+jspm_packages/
 /.pnp
 .pnp.js
+
+# dotenv environment variables file
+.env
+.env.test
 
 # testing
 /coverage
