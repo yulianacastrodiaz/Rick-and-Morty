@@ -6,7 +6,7 @@ const config = {
 	dbUser: process.env.DB_USER || 'postgres',
 	dbPassword: process.env.DB_PASSWORD || 'admin',
 	dbHost: process.env.DB_HOST || 'localhost',
-	dbName: process.env.DB_NAME || 'workshop',
+	dbName: process.env.DB_NAME || 'Rick_and_Morty',
 	dbPort: process.env.DB_PORT || '8000',
 	dev: process.env.NODE_ENV !== 'production',
 	port: process.env.API_PORT || '3001',
