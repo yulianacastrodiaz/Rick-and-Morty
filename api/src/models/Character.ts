@@ -1,6 +1,5 @@
 import {Model, Column, Table, CreatedAt, UpdatedAt} from 'sequelize-typescript';
-import { DataTypes, StringDataType, EnumDataType } from 'sequelize/types';
-import { EnumType } from 'typescript';
+
 @Table
 export default class Character extends Model<Character> {
 
@@ -16,9 +15,11 @@ export default class Character extends Model<Character> {
   @Column
   gender!: string;
   
+  @CreatedAt
   @Column
   createdAt!: Date;
 
+  @UpdatedAt
   @Column
   updatedAt!: Date;
 
