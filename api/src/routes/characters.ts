@@ -1,4 +1,4 @@
-import {Response, Request, Router, NextFunction, response} from 'express';
+import {Response, Request, Router, NextFunction} from 'express';
 import { CharacterApi } from '../../axios';
 import { CharactersResponse } from '../../interfaces';
 import { charactersSorted } from '../helpers/charactersSorted';
@@ -30,7 +30,7 @@ router.post('/', async(req: Request, res: Response) => {
 	try {
 		if(name && status && specie && gender){
 			console.log("hola")
-			const characterCreate = await Character.create()
+			const characterCreate = await Character.create(req.body)
 			res.json(characterCreate)
 		}
 	} catch (error) {
